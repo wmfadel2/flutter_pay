@@ -39,9 +39,13 @@ android {
         disable 'InvalidPackage'
     }
     compileOptions {
-        sourceCompatibility = "1.8"
-        targetCompatibility = 1.8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = '1.8'  // Match Java 1.8
+    }
+
     buildToolsVersion = '28.0.3'
 }
 
